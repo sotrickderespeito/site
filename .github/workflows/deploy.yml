@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -26,21 +26,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build project
-        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Pasta que contém o site compilado
+          path: '.' # Envia toda a pasta raiz diretamente (index.html, sobre.html, contato.html, src)
 
       - name: Deploy to GitHub Pages
         id: deployment
