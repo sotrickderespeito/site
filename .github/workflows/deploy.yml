@@ -5,12 +5,22 @@ on:
     branches: ["main", "master"] # Executa quando houver push nas branches 'main' ou 'master'
   workflow_dispatch: # Permite rodar o workflow de forma manual pela aba Actions do GitHub
 
-# Concede permissão para fazer commit da pasta dist/ compilada na branch gh-pages
+# Permissões necessárias para publicar usando o novo método de deploy direto de Actions do GitHub Pages
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+# Garante que apenas um deploy aconteça por vez
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -23,13 +33,16 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci || npm install
 
       - name: Build project
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload build artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: dist # Pasta que contém o site compilado
-          branch: gh-pages # Branch específica onde ficará o build final do site
+          path: './dist' # Pasta que contém o site compilado
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
