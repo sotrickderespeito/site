@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'PixoReto';
+  src: url('https://fonts.cdnfonts.com/s/85546/PixoReto-0Wonv.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DonGraffiti';
+  src: url('https://fonts.cdnfonts.com/s/85549/DonGraffiti-vmBZz.woff') format('woff');
+  font-display: swap;
+}
+
+@theme {
+  --font-pixo: "PixoReto", sans-serif;
+  --font-graffiti: "DonGraffiti", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-orange-street: #ffffff;
+  --color-blue-street: #a3a3a3;
+  --color-yellow-street: #ffffff;
+  --color-whatsapp: #ffffff;
+  --color-instagram: #ffffff;
+}
+
+/* Custom backgrounds and patterns */
+.street-grid {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><rect width="60" height="60" fill="transparent"/><path d="M0,0 L60,60 M60,0 L0,60" stroke="%23ffffff" stroke-width="0.3" stroke-opacity="0.04"/><rect width="60" height="60" fill="none" stroke="%23ffffff" stroke-width="0.3" stroke-opacity="0.02"/></svg>');
+}
+
+/* Text stroke utilities */
+.text-stroke-sm {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Custom shadows */
+.shadow-street-orange {
+  box-shadow: 4px 4px 0px #ffffff;
+}
+
+.shadow-street-blue {
+  box-shadow: 4px 4px 0px #a3a3a3;
+}
+
+.shadow-street-black {
+  box-shadow: 6px 6px 0px #ffffff;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-left: 1px solid #171717;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
+
+/* Smooth active trans transitions */
+.fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Horizontal overflow prevention & viewport stabilization */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+

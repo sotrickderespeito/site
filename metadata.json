@@ -1,0 +1,6 @@
+{
+  "name": "SOTRICKDERESPEITO",
+  "description": "Coletivo de skate autônomo nascido em Guarulhos/SP para incentivar, registrar e divulgar skatistas locais com respeito, união e oportunidade.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

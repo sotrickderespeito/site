@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Contato & FAQ | SOTRICKDERESPEITO</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="bg-black text-neutral-100 antialiased font-sans street-grid selection:bg-white selection:text-black">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-black/95 border-b border-neutral-900 backdrop-blur-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          
+          <!-- Logo -->
+          <a href="/index.html" class="flex items-center select-none group">
+            <span class="font-mono text-base min-[380px]:text-lg sm:text-xl font-black tracking-wider text-white hover:text-neutral-300 transition-colors">SOTRICKDERESPEITO</span>
+          </a>
+
+          <!-- Desktop Navigation Link List -->
+          <nav class="hidden md:flex items-center space-x-1">
+            <a href="/index.html" class="px-4 py-2 font-mono text-xs uppercase font-bold text-neutral-400 hover:text-white hover:border-b-2 hover:border-neutral-700 transition-colors">Início</a>
+            <a href="/sobre.html" class="px-4 py-2 font-mono text-xs uppercase font-bold text-neutral-400 hover:text-white hover:border-b-2 hover:border-neutral-700 transition-colors">Quem Somos</a>
+            <a href="/contato.html" class="px-4 py-2 font-mono text-xs uppercase font-bold text-white border-b-2 border-white">Contato & FAQ</a>
+          </nav>
+
+          <!-- Right Side Desktop Badge -->
+          <div class="hidden lg:flex items-center gap-3">
+            <span class="font-mono text-[10px] bg-neutral-900 border border-neutral-800 text-neutral-300 px-3 py-1.5 rounded-none">
+              📍 GUARULHOS, SP
+            </span>
+          </div>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="menuToggle" class="md:hidden p-2 text-neutral-400 hover:text-white focus:outline-none cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobileNavMenu" class="hidden md:hidden bg-neutral-950 border-b border-neutral-900 absolute top-20 left-0 right-0 py-4 px-6 space-y-3 shadow-lg z-50">
+        <a href="/index.html" class="block font-mono text-xs uppercase font-bold text-neutral-400 hover:text-white py-2 pl-2">Início</a>
+        <a href="/sobre.html" class="block font-mono text-xs uppercase font-bold text-neutral-400 hover:text-white py-2 pl-2">Quem Somos</a>
+        <a href="/contato.html" class="block font-mono text-xs uppercase font-bold text-white py-2 border-l-2 border-white pl-2">Contato & FAQ</a>
+        <div class="pt-3 border-t border-neutral-900">
+          <span class="inline-block font-mono text-[10px] bg-neutral-900 border border-neutral-800 text-neutral-300 px-3 py-1.5 rounded-none">
+            📍 GUARULHOS, SP
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- FLOATING BACKGROUND NOISE BANNER (SCROLL MARQUEE) -->
+    <div class="bg-white text-black font-mono font-bold uppercase text-xs tracking-wider py-2 overflow-hidden select-none border-y border-neutral-800">
+      <div class="whitespace-nowrap flex gap-8 animate-[marquee_25s_linear_infinite]">
+        <span>SOTRICKDERESPEITO • SKATE DE RUA ORIGINAL • NASCIDO EM GUARULHOS • VALORIZANDO QUEM FAZ A CENA ACONTECER • UNIÃO, RESPEITO E OPORTUNIDADE •</span>
+        <span>SOTRICKDERESPEITO • SKATE DE RUA ORIGINAL • NASCIDO EM GUARULHOS • VALORIZANDO QUEM FAZ A CENA ACONTECER • UNIÃO, RESPEITO E OPORTUNIDADE •</span>
+      </div>
+    </div>
+
+    <!-- MAIN BODY -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+
+      <!-- INTRO ROW -->
+      <section class="space-y-4 fade-in">
+        <span class="font-mono text-xs text-neutral-400 font-black uppercase tracking-wider block">FALE CONOSCO / DÚVIDAS</span>
+        <h1 class="text-2xl min-[360px]:text-3xl min-[410px]:text-[8.5vw] sm:text-5xl font-black font-mono tracking-tight text-white uppercase leading-none break-all min-[360px]:break-normal">Contato & Central FAQ</h1>
+        <p class="font-sans text-neutral-400 text-sm max-w-2xl leading-relaxed">
+          Tem alguma dúvida sobre os encontros e propostas do coletivo, ou gostaria de apoiar nossas ações doando peças de skate usadas? Veja as respostas mais comuns abaixo ou mande mensagem de WhatsApp direto para nós!
+        </p>
+      </section>
+
+      <!-- FAQ & WHATSAPP LAYOUT SECTION -->
+      <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-4">
+        
+        <!-- Accordion Questions (7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          <h3 class="text-xl font-bold font-mono uppercase tracking-tight text-white border-b border-neutral-900 pb-2 select-none">
+            Perguntas Frequentes (FAQ)
+          </h3>
+
+          <div class="space-y-4">
+            
+            <!-- Question 1 -->
+            <div class="faq-accordion-item border border-neutral-800 bg-neutral-900/10 rounded-none">
+              <button class="faq-accordion-header w-full px-5 py-4 flex items-center justify-between text-left font-mono text-xs md:text-sm font-bold uppercase text-white hover:text-neutral-300 transition-colors focus:outline-none cursor-pointer">
+                <span>1. Qualquer pessoa pode colar nos encontros do coletivo?</span>
+                <span class="faq-arrow-icon shrink-0 pl-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-neutral-500"><path d="m6 9 6 6 6-6"/></svg>
+                </span>
+              </button>
+              <div class="faq-accordion-body hidden px-5 pb-5 pt-1 text-xs md:text-sm text-neutral-400 font-sans leading-relaxed border-t border-neutral-900/60">
+                Sim! Nossos encontros são totalmente abertos e gratuitos, organizados para acolher qualquer skatista — independentemente de seu nível, gênero, idade, cor, origem ou condição financeira. Desejamos apenas a união e o respeito.
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-accordion-item border border-neutral-800 bg-neutral-900/10 rounded-none">
+              <button class="faq-accordion-header w-full px-5 py-4 flex items-center justify-between text-left font-mono text-xs md:text-sm font-bold uppercase text-white hover:text-neutral-300 transition-colors focus:outline-none cursor-pointer">
+                <span>2. Como posso apoiar os skatistas locais?</span>
+                <span class="faq-arrow-icon shrink-0 pl-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-neutral-500"><path d="m6 9 6 6 6-6"/></svg>
+                </span>
+              </button>
+              <div class="faq-accordion-body hidden px-5 pb-5 pt-1 text-xs md:text-sm text-neutral-400 font-sans leading-relaxed border-t border-neutral-900/60">
+                Você pode incentivar a cena compartilhando as publicações do coletivo, divulgando os atletas que estão no asfalto quente batalhando por espaço ou doando peças de skate usadas que ainda possam ser aproveitadas por crianças da periferia.
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-accordion-item border border-neutral-800 bg-neutral-900/10 rounded-none">
+              <button class="faq-accordion-header w-full px-5 py-4 flex items-center justify-between text-left font-mono text-xs md:text-sm font-bold uppercase text-white hover:text-neutral-300 transition-colors focus:outline-none cursor-pointer">
+                <span>3. Vocês aceitam doação de peças de skate usadas?</span>
+                <span class="faq-arrow-icon shrink-0 pl-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-neutral-500"><path d="m6 9 6 6 6-6"/></svg>
+                </span>
+              </button>
+              <div class="faq-accordion-body hidden px-5 pb-5 pt-1 text-xs md:text-sm text-neutral-400 font-sans leading-relaxed border-t border-neutral-900/60">
+                Aceitamos sempre! shapes, trucks, rodinhas e rolamentos que ainda estão em bom estado de usabilidade são recolhidos, higienizados e remontados para formar skates operacionais completos, que são oportunamente doados a skatistas iniciantes que não possuem meios financeiros para comprar um.
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="faq-accordion-item border border-neutral-800 bg-neutral-900/10 rounded-none">
+              <button class="faq-accordion-header w-full px-5 py-4 flex items-center justify-between text-left font-mono text-xs md:text-sm font-bold uppercase text-white hover:text-neutral-300 transition-colors focus:outline-none cursor-pointer">
+                <span>4. De onde veio o coletivo SOTRICKDERESPEITO?</span>
+                <span class="faq-arrow-icon shrink-0 pl-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-neutral-500"><path d="m6 9 6 6 6-6"/></svg>
+                </span>
+              </button>
+              <div class="faq-accordion-body hidden px-5 pb-5 pt-1 text-xs md:text-sm text-neutral-400 font-sans leading-relaxed border-t border-neutral-900/60">
+                Nós nascemos em Guarulhos/SP no dia 28 de agosto de 2025 diante da necessidade genuína de dar mais apoio e espaço aos skatistas locais rústicos da periferia, que muitas vezes andam sem nenhum recurso ou amparo promocional.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Direct Form WhatsApp routing (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          <h3 class="text-xl font-bold font-mono uppercase tracking-tight text-white border-b border-neutral-900 pb-2 select-none">
+            Conecte-se Conosco
+          </h3>
+
+          <div class="bg-neutral-900/30 border border-neutral-800 p-8 rounded-none space-y-6">
+            <span class="font-mono text-[10px] text-neutral-400 font-black block uppercase tracking-wider">ROTA DIRETA</span>
+            <div class="space-y-2">
+              <h4 class="text-2xl font-bold font-mono uppercase text-white leading-tight">Envie sua Mensagem</h4>
+              <p class="text-xs text-neutral-400 font-sans leading-relaxed">
+                Nós valorizamos conexões humanos reais e diretas. Para tirar dúvidas, coordenar a doação de peças de skate ou colar junto nos rolês semanais, basta nos enviar uma mensagem diretamente no nosso canal principal no WhatsApp.
+              </p>
+            </div>
+
+            <div class="pt-2">
+              <a href="https://wa.me/5511999999999?text=Quero%20participar%20da%20%40sotrickderespeito" target="_blank" class="w-full py-4 bg-white hover:bg-neutral-200 text-black font-mono text-xs uppercase font-black tracking-wider transition-colors rounded-none cursor-pointer shadow-street-black flex items-center justify-center gap-2">
+                Chamar no WhatsApp 📲
+              </a>
+            </div>
+
+            <div class="pt-4 border-t border-neutral-850 flex items-center justify-between text-[10px] font-mono text-neutral-500">
+              <span>Coletivo SOTRICKDERESPEITO</span>
+              <span class="text-white font-bold uppercase">Atendimento Direto</span>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black border-t border-neutral-900 mt-20 py-12 text-neutral-400">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Branded column -->
+          <div class="space-y-3">
+            <span class="font-mono text-lg font-black text-white">SOTRICKDERESPEITO</span>
+            <p class="text-xs text-neutral-500 font-sans leading-relaxed">
+              Coletivo de skate autônomo nascido em Guarulhos/SP para incentivar, registrar e divulgar skatistas locais com respeito, união e oportunidade.
+            </p>
+          </div>
+
+          <!-- Shortcuts -->
+          <div class="space-y-3">
+            <h4 class="font-mono text-xs uppercase text-white font-bold tracking-wider">Acessos Rápidos</h4>
+            <div class="flex flex-col space-y-1.5 text-xs">
+              <a href="/sobre.html" class="hover:text-white transition-colors">Quem Somos</a>
+              <a href="/contato.html" class="hover:text-white transition-colors">Contato & FAQ</a>
+            </div>
+          </div>
+
+          <!-- Direct connections -->
+          <div class="space-y-3">
+            <h4 class="font-mono text-xs uppercase text-white font-bold tracking-wider">Redes e Conexão</h4>
+            <div class="flex flex-col space-y-1.5 text-xs font-mono">
+              <a href="https://instagram.com/sotrickderespeito" class="hover:text-white transition-colors" target="_blank">Instagram (@sotrickderespeito)</a>
+              <a href="https://wa.me/5511999999999?text=Quero%20participar%20da%20%40sotrickderespeito" class="hover:text-white transition-colors" target="_blank">WhatsApp Coletivo</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pt-8 border-t border-neutral-900 flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-neutral-600 gap-4">
+          <span>&copy; <span id="currentYear">2026</span> SOTRICKDERESPEITO. Todos os direitos reservados.</span>
+          <div class="flex gap-4">
+            <span class="hover:text-neutral-400">Desenvolvido com Concreto e Amor</span>
+            <span>Estático - GitHub Pages Compatível</span>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- SCROLL BACK TO TOP BUTTON -->
+    <button id="backToTopBtn" class="hidden fixed bottom-6 left-6 p-3 bg-neutral-900 border border-neutral-850 hover:bg-white text-neutral-300 hover:text-black rounded-full cursor-pointer transition-all hover:scale-105 z-50">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <!-- FLOATING ACTION BUTTONS (FAB) - Minimalist Black & White -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
+      <!-- Instagram FAB -->
+      <a href="https://instagram.com/sotrickderespeito" target="_blank" rel="noopener noreferrer" class="p-4 bg-neutral-900 border border-neutral-800 hover:bg-white text-neutral-400 hover:text-black rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center w-14 h-14" title="Siga nosso Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+      </a>
+      <!-- WhatsApp FAB with participation message -->
+      <a href="https://wa.me/5511999999999?text=Quero%20participar%20da%20%40sotrickderespeito" target="_blank" rel="noopener noreferrer" class="p-4 bg-neutral-900 border border-neutral-800 hover:bg-white text-neutral-400 hover:text-black rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center w-14 h-14" title="Quero participar da @sotrickderespeito">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 fill-current"><path d="M21.822 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1-2.11-.45 12.84 12.84 0 0 0 2.81.7a2 2 0 0 1 2 1.72z"/></svg>
+      </a>
+    </div>
+
+    <!-- Vanilla Javascript core engine -->
+    <script type="module" src="/src/script.js"></script>
+
+  </body>
+</html>
